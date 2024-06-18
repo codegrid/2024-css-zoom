@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 128px;
+	margin: 16px;
+	background: orange;
+}
+</style>
+</head>
+<body>
+
+	<div>zoom 初期値</div>
+	<div style="zoom: 2">zoom: 2;</div>
+	<div style="zoom: 2.5">zoom: 2.5;</div>
+	<div style="zoom: 0">zoom: 0;</div> <!-- 0は無効（無視される） -->
+	<div style="zoom: -1">zoom: -1;</div> <!-- 負の値は無効（無視される） -->
+	<div style="zoom: 0.01">zoom: 0.01;</div> <!-- 小さな値は有効（ほぼ表示されない） -->
+
+</body>
+</html>
